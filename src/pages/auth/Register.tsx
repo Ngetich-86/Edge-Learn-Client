@@ -34,9 +34,7 @@ const Register = () => {
     const {
       register,
       handleSubmit,
-      formState: { errors },
-      watch,
-      setValue,
+      formState: { errors }
     } = useForm({ resolver: yupResolver(schema) });
   
     const onSubmit = async (data: any) => {
@@ -146,7 +144,9 @@ const Register = () => {
                 </div>
                 <p>Already have an account? <Link to="/login">Login Now</Link></p>
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary bg-success">Sign Up</button>
+                  <button type="submit" className="btn btn-primary bg-success">
+                  {isLoading ? 'Signing up...' : 'Sign Up'}
+                  </button>
                 </div>
               </div>
             </div>

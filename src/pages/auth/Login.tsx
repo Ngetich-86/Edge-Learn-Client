@@ -99,8 +99,10 @@ const Login = () => {
                   Don't have an account? <Link to="/register">Sign Up</Link>
                 </p>
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary bg-success">
-                    Login Now
+                  <button type="submit" className="btn btn-primary bg-success"
+                   disabled={isLoggingIn}
+                   >
+                    {isLoggingIn ? 'Logging in...' : 'Login Now'}
                   </button>
                 </div>
               </div>
