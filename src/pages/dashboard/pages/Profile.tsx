@@ -102,6 +102,10 @@ const Profile = () => {
   if (error) {
     return <div>Error loading user data.</div>;
   }
+  if (isLoading) {
+    return <div>Loading user data...</div>;
+  }
+  
 
   if (!userData) {
     return <div>No user data available.</div>;
@@ -168,6 +172,7 @@ const Profile = () => {
                     defaultValue={userData.first_name}
                     {...register("first_name")}
                   />
+                  {errors.first_name && <p className="text-red-500">{errors.first_name.message}</p>}
                 </div>
                 <div className="form-control">
                   <label htmlFor="last_name" className="label">Last Name</label>
@@ -177,6 +182,7 @@ const Profile = () => {
                     defaultValue={userData.last_name}
                     {...register("last_name")}
                   />
+                  {errors.last_name && <p className="text-red-500">{errors.last_name.message}</p>}
                 </div>
                 <div className="form-control">
                   <label htmlFor="email" className="label">Email</label>
@@ -186,6 +192,7 @@ const Profile = () => {
                     defaultValue={userData.email}
                     {...register("email")}
                   />
+                   {errors.email && <p className="text-red-500">{errors.email.message}</p>}
                 </div>
                 <div className="form-control">
                   <label htmlFor="phone_number" className="label">Phone Number</label>
@@ -195,6 +202,7 @@ const Profile = () => {
                     defaultValue={userData.phone_number}
                     {...register("phone_number")}
                   />
+                  {errors.phone_number && <p className="text-red-500">{errors.phone_number.message}</p>}
                 </div>
                 <div className="form-control">
                   <label htmlFor="phone_number" className="label">Password</label>
