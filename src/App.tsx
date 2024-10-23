@@ -1,9 +1,9 @@
 import './App.css'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+// import Footer from './components/Footer'
+// import Navbar from './components/Navbar'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './pages/About';
-import Home from './pages/DashboardPage';
+// import Home from './pages/DashboardPage';
 import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
 import Error from './pages/Error';
@@ -13,7 +13,7 @@ import Contact from './pages/Contact';
 import Members from './pages/dashboard/pages/Members';
 import Blogs from './pages/dashboard/pages/blog/Blogs';
 import Community from './pages/dashboard/pages/Community';
-import CreateBlog from './pages/dashboard/pages/blog/CreateBlog';
+// import CreateBlog from './pages/dashboard/pages/blog/CreateBlog';
 import Homepage from './pages/Homepage';
 import ManageBlogs from './pages/dashboard/pages/blog/ManageBlogs';
 import CreateBlogModal from './pages/dashboard/pages/blog/CreateBlog';

@@ -269,6 +269,7 @@ function SideNav() {
   }, []);
 
   const canViewItem = (item: string, isAdminOnly: boolean = false, isSuperAdminOnly: boolean = false) => {
+    // console.log(item);
     if (role === 'super_admin') {
       return true; // Super Admin can view all items
     } else if (role === 'admin') {

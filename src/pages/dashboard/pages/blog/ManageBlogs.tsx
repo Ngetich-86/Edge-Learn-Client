@@ -13,7 +13,7 @@ const ManageBlogs:React.FC = () => {
   const [isEditModalOpen, setEditModalOpen] = useState(false);
   const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
 
-  const openCreateModal = () => setCreateModalOpen(true);
+  // const openCreateModal = () => setCreateModalOpen(true);
   const closeCreateModal = () => setCreateModalOpen(false);
 
   const handleEditClick = (blog: Blog) => {

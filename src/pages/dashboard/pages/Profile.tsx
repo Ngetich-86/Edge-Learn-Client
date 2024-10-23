@@ -9,6 +9,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useForm, SubmitHandler } from 'react-hook-form'
 import axios from 'axios';
+import { Toaster, toast } from 'sonner';
 
 type UserFormData = {
   first_name: string;
@@ -88,10 +89,10 @@ const Profile = () => {
       await updateUser({ id: user_id, ...formData, image_url: imageUrl }).unwrap();
       setIsEditMode(false);
       refetch();
-      // toast.success('User updated successfully');
+      toast.success('User updated successfully');
       console.log('User updated successfully');
     } catch (err) {
-      // toast.error('Error updating user');
+      toast.error('Error updating user');
       console.error('Error updating user', err);
     } finally {
       setIsUpdating(false);
@@ -108,6 +109,7 @@ const Profile = () => {
 
   return (
     <>
+    <Toaster />
       <div className="card shadow-xl mx-auto p-6 rounded-md bg-gray-800 min-h-screen max-w-4xl">
         <div className="flex flex-col items-center md:flex-row md:items-start border-b-2 border-slate-600 pb-6">
           <div className="relative mb-6 md:mb-0 md:mr-8 flex justify-center items-center">

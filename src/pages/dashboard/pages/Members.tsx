@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {  SyncLoader,ClipLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 import { userAPI } from "../../../features/users/userAPI";
 import { Link } from "react-router-dom";
 import { useDeleteUserMutation } from "../../../features/users/userAPI";
