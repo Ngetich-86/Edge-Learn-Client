@@ -268,7 +268,7 @@ function SideNav() {
     };
   }, []);
 
-  const canViewItem = (item: string, isAdminOnly: boolean = false, isSuperAdminOnly: boolean = false) => {
+  const canViewItem = ( isAdminOnly: boolean = false, isSuperAdminOnly: boolean = false) => {
     // console.log(item);
     if (role === 'super_admin') {
       return true; // Super Admin can view all items
@@ -306,7 +306,7 @@ function SideNav() {
           <details>
             <summary><Menu />Dashboard</summary>
             <ul className="flex flex-col">
-              {canViewItem('Resources', true) && (
+              {canViewItem(true) && (
                 <li><Link to="/">Analytics</Link></li>
               )}
             </ul>
@@ -319,7 +319,7 @@ function SideNav() {
             <summary><Book />Resources</summary>
             <ul>
               <li><Link to="blogs">Blogs</Link></li>
-              {canViewItem('Resources', true) && (
+              {canViewItem(true) && (
                 <>
                   <li><Link to="create-blog">Add Blog</Link></li>
                   <li><Link to="manage-blogs">Manage Blogs</Link></li>
@@ -340,7 +340,7 @@ function SideNav() {
         </li>
 
         {/* Members (restricted to admin and super_admin) */}
-        {canViewItem('Members', true) && (
+        {canViewItem(true) && (
           <li>
             <Link to="members"><Users />Members</Link>
           </li>

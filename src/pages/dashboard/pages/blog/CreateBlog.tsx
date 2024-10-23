@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useCreateBlogMutation, Blog } from '../../../../features/blogs/blogsAPI';
+import { useCreateBlogMutation } from '../../../../features/blogs/blogsAPI';
 import { Toaster, toast } from 'sonner';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
