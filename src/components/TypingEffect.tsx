@@ -14,7 +14,8 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
   const [displayText, setDisplayText] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const typingRef = useRef(null);
+  // const typingRef = useRef(null);
+  const typingRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (typingRef.current) {

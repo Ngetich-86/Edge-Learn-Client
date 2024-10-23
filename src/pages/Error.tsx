@@ -1,9 +1,12 @@
-import { Link, useRouteError } from "react-router-dom";
+import { Link,
+    //  useRouteError
+     } from "react-router-dom";
 
 import {ArrowLeft} from 'lucide-react'
 
 function Error() {
-const error : unknown = useRouteError()
+// const error : unknown = useRouteError()
+// console.log(error)
 
   return (
     <div className="py-10  bg:base-100">
