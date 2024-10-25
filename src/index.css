@@ -13,6 +13,3 @@
 .breathing-image {
     animation: breathe 2s ease-in-out infinite; 
   }
-  body{
-    border: 4px solid rgb(4, 13, 43);
-  }
