@@ -246,7 +246,7 @@ function SideNav() {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(true); // By default, side nav is open
   const user = useSelector((state: RootState) => state.user);
-  const role = user?.user?.user_type ?? 'user'; // Default to 'user' if no role is defined
+  const role = user?.user?.user_type ?? ''; // Default to 'user' if no role is defined
 
   // Function to toggle side navigation drawer
   const toggleDrawer = () => {
@@ -256,7 +256,7 @@ function SideNav() {
   // Handle responsive behavior
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 724) {
+      if (window.innerWidth < 1024 ) {
         setIsOpen(false); // Close side nav on small screens
       } else {
         setIsOpen(true); // Open side nav on larger screens
@@ -267,6 +267,7 @@ function SideNav() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
 
   const canViewItem = ( isAdminOnly: boolean = false, isSuperAdminOnly: boolean = false) => {
     // console.log(item);
@@ -290,7 +291,8 @@ function SideNav() {
     <div className="flex">
       {/* Toggle Button */}
       <button
-        className={`fixed top-0 left-0 z-50 p-3`}
+        // className={`fixed top-0 left-0 z-50 p-3`}
+        className="fixed top-2 left-2 z-50 p-2 bg-gray-200 rounded-full"
         onClick={toggleDrawer}
       >
         {isOpen ? (
@@ -299,9 +301,10 @@ function SideNav() {
           <ChevronsRight className="text-webcolor block lg:hidden" size={45} />
         )}
       </button>
+      
 
       {/* Side Navigation */}
-      <ul className={`menu bg-base-200 min-h-full text-base-content transition-all duration-300 ${isOpen ? 'w-54' : 'w-10'} overflow-hidden`}>
+      <ul className={`menu bg-base-200 min-h-full text-base-content transition-all duration-300 ${isOpen ? 'w-54' : 'w-1'} overflow-hidden`}>
         <li>
           <details>
             <summary><Menu />Dashboard</summary>
@@ -374,3 +377,5 @@ function SideNav() {
 }
 
 export default SideNav;
+
+//test 200==============================================

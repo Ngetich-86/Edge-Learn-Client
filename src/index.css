@@ -13,3 +13,8 @@
 .breathing-image {
     animation: breathe 2s ease-in-out infinite; 
   }
+  @media (max-width: 1024px) {
+    .mobile-hidden {
+      display: none !important;
+    }
+  }
