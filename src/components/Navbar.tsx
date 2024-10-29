@@ -72,7 +72,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { RootState } from "../app/store";
 import logo from "../assets/images/Designer-removebg-preview.png";
-// import { logOut } from "../../features/users/userSlice";
+import { logOut } from "../features/users/userSlice";
 import { useDispatch } from "react-redux";
 
 const Navbar = () => {
@@ -111,10 +111,10 @@ const Navbar = () => {
         };
     }, [isDropdownOpen]);
 
-    // const handleLogout = () => {
-    //     dispatch(logOut());
-    //     navigate('/login');
-    // }
+    const handleLogout = () => {
+        dispatch(logOut());
+        navigate('/login');
+    }
 
     return (
         <div className="navbar h-fit shadow-120 text-xl rounded bg-gray-800">
@@ -191,7 +191,7 @@ const Navbar = () => {
                             <li>
                                 <Link to="/dashboard/profile" className="justify-between pb-2 cursor-pointer">Profile</Link>
                             </li>
-                            {/* <li><a onClick={handleLogout} className="pt-2 cursor-pointer">Logout</a></li> */}
+                            <li><a onClick={handleLogout} className="pt-2 cursor-pointer">Logout</a></li>
                         </ul>
                     </div>
                 )}
