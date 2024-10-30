@@ -25,7 +25,7 @@ function Dashboard() {
         <div className='min-w-fit bg-base-200 hidden md:block'>
           <Drawer />
         </div>
-        <div className='flex flex-col min-w-[90%] '>
+        <div className='flex flex-col min-w-[85%] '>
           <Card className='h-fit'>
             <Outlet />
           </Card>
