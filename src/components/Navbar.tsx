@@ -125,7 +125,7 @@ const Navbar = () => {
 
             <div className="flex-none gap-2">
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 text-base text-links">
+                    <ul className="menu menu-horizontal px-1 text-white text-links">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/dashboard_page/profile"> Dashboard</Link></li>
                         <li><Link to="/contact-us">Contact Us</Link></li>
@@ -162,7 +162,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className={`fixed top-0 left-0 w-[30%] h-screen bg-gray-800 border-r border-gray-900 transform ${isDropdownOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-500 ease-in-out lg:hidden z-50`}>
+                <div className={`fixed top-0 left-0 w-[50%] h-screen bg-gray-800 border-r border-gray-900 transform ${isDropdownOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-500 ease-in-out lg:hidden z-50`}>
                     <ul className="menu p-4 text-cards">
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/">Home</Link></li>
                         <li className="border-b border-gray-300 py-2 text-text-light"><Link to="/dashboard_page/profile">Dashboard</Link></li>
