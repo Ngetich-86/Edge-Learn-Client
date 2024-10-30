@@ -189,7 +189,7 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 pt-4 shadow">
                             <li>
-                                <Link to="/dashboard/profile" className="justify-between pb-2 cursor-pointer">Profile</Link>
+                                <Link to="/dashboard_page/profile" className="justify-between pb-2 cursor-pointer">Profile</Link>
                             </li>
                             <li><a onClick={handleLogout} className="pt-2 cursor-pointer">Logout</a></li>
                         </ul>
