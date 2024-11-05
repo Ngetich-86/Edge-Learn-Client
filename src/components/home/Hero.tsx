@@ -68,7 +68,7 @@ const Hero = () => {
     <section className="h-fit min-h-screen w-full gradient-background -mt-16 flex items-center justify-center max-xl:px-4 max-xl:pt-32 max-xl:pb-12">
       <div className="max-w-[1400px] w-full min-h-48 flex max-lg:flex-col gap-x-20">
         <div className="max-w-2xl flex-1">
-          <div className="font-medium text-lg xs:text-3xl lg:text-3xl xl:text-3xl text-blue-600 typing-effect">
+          <div className="font-medium text-lg xs:text-3xl lg:text-3xl xl:text-3xl text-blue-300 typing-effect">
             <TypingEffect words={[`Hello👋Welcome to PrismCloudata, the Future of Innovation!`]} />
           </div>
           <h5 className="text-xl xs:text-2xl lg:text-3xl xl:text-3xl py-4 text-white hero-title">{` web + cloud + data`}</h5>
@@ -80,7 +80,7 @@ const Hero = () => {
         Stay ahead, stay informed with our blogs, and be part of a community that's building tomorrow's solutions today.
           </p>
           <div className="flex justify-center items-center h-[20%]">
-          <button className='btn btn-primary button bg-[#0000FF]'>
+          <button className='btn btn-primary button bg-[#0098FF]'>
             <NavLink to="/dashboard_page"> Get started!</NavLink>
           </button>
           </div>

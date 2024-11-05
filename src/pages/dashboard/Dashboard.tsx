@@ -1,4 +1,45 @@
-import Container from '../../components/Container'
+// import Container from '../../components/Container'
+// import Card from './Card'
+// import { Outlet ,useNavigate} from 'react-router-dom'
+// import Footer from '../../components/Footer'
+// import Navbar from '../../components/Navbar'
+// import Drawer from './aside/Drawer'
+// import { useSelector } from 'react-redux';
+// import { RootState } from "../../app/store";
+// import { useEffect } from 'react';
+
+// function Dashboard() {
+//   const navigate = useNavigate();
+//   const user = useSelector((state: RootState) => state.user);
+
+//   useEffect(() => {
+//     if (!user || !user.user) {
+//       navigate('/login');
+//     }
+//   }, [user, navigate]);
+
+//   return (
+//     <>
+//       <Navbar />
+//       <Container className='flex max-h-fit min-h-screen bg-base-400 text-neutral-200' >
+//         <div className='min-w-fit bg-base-200 hidden md:block'>
+//           <Drawer />
+//         </div>
+//         <div className='flex flex-col min-w-[80%] '>
+//           <Card className='h-fit flex-1 overflow-y-auto'>
+//             <Outlet />
+//           </Card>
+//         </div>
+//       </Container>
+//       <Footer />
+//     </>
+//   )
+// }
+
+// export default Dashboard
+
+//test code
+// import Container from '../../components/Container'
 import Card from './Card'
 import { Outlet ,useNavigate} from 'react-router-dom'
 import Footer from '../../components/Footer'
@@ -20,20 +61,23 @@ function Dashboard() {
 
   return (
     <>
+    <div className="flex flex-col">
       <Navbar />
-      <Container className='flex max-h-fit min-h-screen bg-base-400 text-neutral-200' >
-        <div className='min-w-fit bg-base-200 hidden md:block'>
+
+      <div className="flex lg:flex-row  mt-2 overflow-hidden bg-base-900 text-neutral-200">
+        <aside className="lg:flex flex-col flex-shrink-0 w-1 lg:w-44  min-w-fit ">
           <Drawer />
-        </div>
-        <div className='flex flex-col min-w-[85%] '>
-          <Card className='h-fit'>
-            <Outlet />
+        </aside>
+        <div className='flex flex-col min-w-[80%] ml-0 '>
+        <Card className='h-fit flex-1 overflow-y-auto '>
+          <Outlet />
           </Card>
-        </div>
-      </Container>
+          </div>
+      </div>
       <Footer />
+    </div>
+    
     </>
   )
 }
-
 export default Dashboard
