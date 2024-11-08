@@ -130,7 +130,6 @@ function SideNav() {
         <li><Link to="#" onClick={handleLogOut}><LogOut />Logout</Link></li>
       </ul>
     </div>
-    
   );
 }
 

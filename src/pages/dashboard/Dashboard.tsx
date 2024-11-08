@@ -74,9 +74,8 @@ function Dashboard() {
           </Card>
           </div>
       </div>
-      
     </div>
-    
+    <Footer />
     </>
     
   )
