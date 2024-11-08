@@ -10,6 +10,7 @@ import { loginSuccess } from "../../features/users/userSlice";
 import Navbar from "../../components/Navbar";
 // import { login } from "../../features/login/loginAPI";
 import { loginAPI } from "../../features/login/loginAPI";
+import Footer from "../../components/Footer";
 // Define the form data type
 type FormData = {
   email: string,
@@ -44,7 +45,7 @@ const Login = () => {
               dispatch(loginSuccess(response));
               toast.success("Login successful");
               setTimeout(() => {
-                  navigate('/dashboard_page/profile');
+                  navigate('/dashboard_page/blogs');
               }, 1000);
           } else {
               toast.error("Invalid credentials");
@@ -99,7 +100,7 @@ const Login = () => {
                   Don't have an account? <Link to="/register">Sign Up</Link>
                 </p>
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-primary bg-success"
+                  <button type="submit" className="btn btn-primary button bg-[#0098FF]"
                    disabled={isLoggingIn}
                    >
                     {isLoggingIn ? 'Logging in...' : 'Login Now'}
@@ -110,6 +111,7 @@ const Login = () => {
           </div>
         </div>
       </form>
+      <Footer />
     </>
   );
 };

@@ -64,20 +64,21 @@ function Dashboard() {
     <div className="flex flex-col">
       <Navbar />
 
-      <div className="flex lg:flex-row  mt-2 overflow-hidden bg-base-900 text-neutral-200">
-        <aside className="lg:flex flex-col flex-shrink-0 w-1 lg:w-44  min-w-fit ">
+      <div className="flex lg:flex-row  mt-2 overflow-hidden  text-neutral-200">
+        <aside className="lg:flex flex-col flex-shrink-0 w-1 lg:w-44 bg-base-900  ">
           <Drawer />
         </aside>
-        <div className='flex flex-col min-w-[80%] ml-0 '>
-        <Card className='h-fit flex-1 overflow-y-auto '>
+        <div className='flex flex-col min-w-[80%]'>
+        <Card className='flex-1 overflow-y-auto'>
           <Outlet />
           </Card>
           </div>
       </div>
-      <Footer />
+      
     </div>
     
     </>
+    
   )
 }
 export default Dashboard

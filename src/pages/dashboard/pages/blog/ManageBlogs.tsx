@@ -57,12 +57,14 @@ const ManageBlogs:React.FC = () => {
             className="w-full h-40 object-cover rounded-lg mb-4"
           />
           <h2 className="text-2xl font-semibold text-white mb-4">{blog.blog_name}</h2>
-          <p className="text-white mb-2 flex items-center justify-between"><strong>About:</strong>{blog.blog_description}</p>
+          <p className="text-white mb-2 flex items-center justify-between">
+            {/* <strong>About:</strong> */}
+            {blog.blog_description}</p>
             <strong>Link: </strong>{' '}
           <div className="flex flex-col items-center justify-evenly">
             <div className="flex flex-wrap mt-2">
               <a href={blog.blog_link} className="text-blue-500 hover:underline">
-                {/* {blog.blog_link} */}
+                {blog.blog_link}
               </a>
             </div>
           </div>

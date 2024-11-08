@@ -57,10 +57,10 @@ function SideNav() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex ">
       {/* Toggle Button */}
       <button
-        className={`fixed top-0 left-0 z-50 p-3 bg-gray-900 rounded-full`}
+        className={`fixed top-0 left-0 z-50 p-3 bg-base-400 rounded-full`}
         onClick={toggleDrawer}
       >
         {isOpen ? (
@@ -72,7 +72,12 @@ function SideNav() {
       
 
       {/* Side Navigation */}
-      <ul className={`menu bg-base-200 min-h-full text-base-content transition-all duration-300 ${isOpen ? 'w-54' : 'w-1'} overflow-hidden`}>
+      {/* <ul className={`menu bg-base-200 min-h-full text-base-content transition-all duration-300 ${isOpen ? 'w-54' : 'w-0'} overflow-hidden`}> */}
+      <ul className={`fixed left-0 z-4 menu bg-base-200 min-h-full text-base-content p-4 overflow-y-auto transition-transform duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          } text-nav bg-drawer rounded w-44 dark:bg-drawer ml-1 mb-4 lg:translate-x-0`}
+        tabIndex={-1}
+        aria-labelledby="drawer-body-scrolling-label"
+      >
         <li>
           <details>
             <summary><Menu />Dashboard</summary>

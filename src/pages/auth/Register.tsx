@@ -7,6 +7,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { userAPI } from "../../features/users/userAPI";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 // Validation schema using yup
 const schema = yup.object().shape({
@@ -159,7 +160,7 @@ const Register = () => {
           
           {/* Submit Button */}
           <div className="form-control mt-6">
-            <button type="submit" className="btn btn-primary bg-success">
+            <button type="submit" className="btn btn-primary button bg-[#0098FF]">
               {isLoading ? 'Signing up...' : 'Sign Up'}
             </button>
           </div>
@@ -168,7 +169,7 @@ const Register = () => {
     </div>
   </div>
 </form>
-
+<Footer />
     </>
   );
 };

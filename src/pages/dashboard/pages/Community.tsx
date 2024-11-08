@@ -1,11 +1,12 @@
 import { FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-import communityImage from "../../../assets/images/section.png"
 const Community = () => {
   return (
     <>
         <div className="flex flex-col container mx-auto md:flex-row-reverse items-center py-4 text-md ">
         <div className="flex items-center justify-center w-[100%]">
-          <img src={communityImage} alt="community pic" className="rounded mb-4 w-[400px] md:mb-0" />
+          <img src="https://www.gitsoftwaresolutions.com/assets/services/3.png"
+          // {communityImage}
+           alt="community pic" className="rounded mb-4 w-[400px] md:mb-0" />
         </div>
         <div className=" ml-[30px] md:w-1/2 p-8 card">
           <h2 className="text-2xl font-bold mb-2">Join our Community✨</h2>
@@ -23,7 +24,7 @@ const Community = () => {
         <FaEnvelope size={30} />
       </a>
     </div>
-          <form>
+          {/* <form>
     <h6 className="footer-title">Newsletter</h6>
     <p>Stay connected with the latest updates by subscribing to our newsletter! 💌</p>
     <fieldset className="form-control w-80">
@@ -38,7 +39,7 @@ const Community = () => {
         <button className="btn btn-primary join-item">Subscribe</button>
       </div>
     </fieldset>
-  </form>
+  </form> */}
         </div>
       </div>
       </>

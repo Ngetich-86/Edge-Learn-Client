@@ -1,4 +1,4 @@
-import BannerImage from "../assets/images/banner_img_2.png";
+import BannerImage from "../../assets/images/banner_img_2.png";
 
 // import ScrollReveal from "scrollreveal";
 

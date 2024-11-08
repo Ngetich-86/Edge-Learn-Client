@@ -62,16 +62,16 @@ export const Contact = () => {
       <div className='flex flex-col md:flex-row p-5 justify-center items-center h-fit gap-4 md:gap-8 pb-10 text-text-light'>
         <div className='flex flex-col w-full md:w-[30%] space-y-4'>
           <div className='bg-gray-800 p-5 rounded-lg text-center flex flex-col items-center'>
-            <MdLocationOn className='text-[#0000FF] text-2xl mb-2' />
+            <MdLocationOn className='text-[#0098FF] text-2xl mb-2' />
             <h3 className=' text-lg md:text-xl'>Location</h3>
             <p>Nairobi, Kenya</p>
           </div>
           <div className='bg-gray-800 p-5 rounded-lg text-center flex flex-col items-center'>
-            <MdEmail className='text-[#0000FF] text-2xl mb-2' />
+            <MdEmail className='text-[#0098FF] text-2xl mb-2' />
             <h3 className=' text-lg md:text-xl'>Email</h3>
           </div>
           <div className='bg-gray-800 p-5 rounded-lg text-center flex flex-col items-center'>
-            <MdPhone className='text-[#0000FF] text-2xl mb-2' />
+            <MdPhone className='text-[#0098FF] text-2xl mb-2' />
             <h3 className=' text-lg md:text-xl'>Phone</h3>
             <p>(+254) 7000000</p>
           </div>
@@ -103,7 +103,7 @@ export const Contact = () => {
             ></textarea>
             <button
               type='submit'
-              className='p-2 bg-[#0000FF] text-black rounded-lg hover:bg-white hover:text-black transition duration-300 md:w-[25%]'
+              className='p-2 bg-[#0098FF] text-black rounded-lg hover:bg-white hover:text-black transition duration-300 md:w-[25%]'
               disabled={loading}
             >
               {loading ? 'Sending...' : 'Send Message'}

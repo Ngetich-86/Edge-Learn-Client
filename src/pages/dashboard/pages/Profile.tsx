@@ -114,7 +114,8 @@ const Profile = () => {
   return (
     <>
     <Toaster />
-      <div className="card shadow-xl mx-auto p-6 rounded-md bg-gray-800 min-h-screen max-w-4xl">
+      {/* <div className="card  mx-auto p-6 rounded-md bg-gray-800 min-h-fit max-w-4xl"> */}
+      <div className='card  mx-auto p-6'>
         <div className="flex flex-col items-center md:flex-row md:items-start border-b-2 border-slate-600 pb-6">
           <div className="relative mb-6 md:mb-0 md:mr-8 flex justify-center items-center">
             <img
