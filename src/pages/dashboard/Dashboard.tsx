@@ -42,7 +42,6 @@
 // import Container from '../../components/Container'
 import Card from './Card'
 import { Outlet ,useNavigate} from 'react-router-dom'
-import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import Drawer from './aside/Drawer'
 import { useSelector } from 'react-redux';
@@ -75,7 +74,6 @@ function Dashboard() {
           </div>
       </div>
     </div>
-    <Footer />
     </>
     
   )
