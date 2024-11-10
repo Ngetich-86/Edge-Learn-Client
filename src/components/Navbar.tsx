@@ -71,7 +71,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { RootState } from "../app/store";
-import logo from "../assets/images/Designer-removebg-preview.png";
+import logo from "../assets/images/PrismCloudata-logo.png";
 import { logOut } from "../features/users/userSlice";
 import { useDispatch } from "react-redux";
 
@@ -119,8 +119,8 @@ const Navbar = () => {
     return (
         <div className="navbar h-fit shadow-120 text-xl rounded bg-gray-800">
             <div className="flex-1 gap-4 ml-6 md:ml-12">
-                <img src={logo} alt="logo" className=" hidden md:block w-12 h-12" />
-                <h1 className="hidden md:block md:text-2xl font-bold text-links">PrismCloudata</h1>
+                <img src={logo} alt="logo" className=" hidden md:block w-29 h-12" />
+                {/* <h1 className="hidden md:block md:text-2xl font-bold text-links">PrismCloudata</h1> */}
             </div>
 
             <div className="flex-none gap-2">
