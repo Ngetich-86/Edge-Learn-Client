@@ -112,10 +112,152 @@ const Profile = () => {
   }
 
   return (
+    // <>
+    // <Toaster />
+    //   {/* <div className="card  mx-auto p-6 rounded-md bg-gray-800 min-h-fit max-w-4xl"> */}
+    //   <div className='card  mx-auto p-6 min-h-fit max-w-6xl'>
+    //     <div className="flex flex-col items-center md:flex-row md:items-start border-b-2 border-slate-600 pb-6">
+    //       <div className="relative mb-6 md:mb-0 md:mr-8 flex justify-center items-center">
+    //         <img
+    //           src={userData.image_url || userIcon}
+    //           className="rounded-full h-32 w-32 object-cover border-4 border-white"
+    //           alt="User Avatar"
+    //         />
+    //         {userData.isVerified ? (
+    //           <div className="absolute bottom-0 right-0 p-1 bg-green-700 rounded-full border-2 border-white">
+    //             <MdCheckCircle className="text-white w-6 h-6" title="Verified" />
+    //           </div>
+    //         ) : (
+    //           <div
+    //             className="absolute bottom-0 right-0 p-1 bg-gray-700 rounded-full border-2 border-white cursor-pointer"
+    //             title="Not Verified"
+    //           >
+    //             <MdHelp className="text-white w-6 h-6" />
+    //           </div>
+    //         )}
+    //       </div>
+    //       <div className="text-center md:text-left">
+    //         <h1 className="text-3xl font-bold mb-2">
+    //           {userData.first_name} {userData.last_name}
+    //           <span className="badge badge-accent badge-outline">{role}</span>
+    //         </h1>
+    //         <div className="space-y-2">
+    //           <div className="flex items-center">
+    //             <MdEmail className="text-gray-400 mr-2" />
+    //             <p className="text-lg font-semibold">Email:</p>
+    //             <p className="text-lg ml-2">{userData.email}</p>
+    //           </div>
+    //           <div className="flex items-center">
+    //             <MdPhone className="text-gray-400 mr-2" />
+    //             <p className="text-lg font-semibold">Phone:</p>
+    //             <p className="text-lg ml-2">{userData.phone_number}</p>
+    //           </div>
+            
+    //         </div>
+    //       </div>
+    //     </div>
+
+    //     <div className="flex justify-center mt-6 space-x-4">
+    //       <button className="btn btn-primary" onClick={() => setIsEditMode(true)}>Edit Profile</button>
+    //     </div>
+
+    //     {isEditMode && (
+    //       <div className="mt-8">
+    //         <form onSubmit={handleSubmit(onSubmit)}>
+    //           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    //             <div className="form-control">
+    //               <label htmlFor="first_name" className="label">First Name</label>
+    //               <input
+    //                 id="first_name"
+    //                 className="input input-bordered"
+    //                 defaultValue={userData.first_name}
+    //                 {...register("first_name")}
+    //               />
+    //               {errors.first_name && <p className="text-red-500">{errors.first_name.message}</p>}
+    //             </div>
+    //             <div className="form-control">
+    //               <label htmlFor="last_name" className="label">Last Name</label>
+    //               <input
+    //                 id="last_name"
+    //                 className="input input-bordered"
+    //                 defaultValue={userData.last_name}
+    //                 {...register("last_name")}
+    //               />
+    //               {errors.last_name && <p className="text-red-500">{errors.last_name.message}</p>}
+    //             </div>
+    //             <div className="form-control">
+    //               <label htmlFor="email" className="label">Email</label>
+    //               <input
+    //                 id="email"
+    //                 className="input input-bordered"
+    //                 defaultValue={userData.email}
+    //                 {...register("email")}
+    //               />
+    //                {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+    //             </div>
+    //             <div className="form-control">
+    //               <label htmlFor="phone_number" className="label">Phone Number</label>
+    //               <input
+    //                 id="phone_number"
+    //                 className="input input-bordered"
+    //                 defaultValue={userData.phone_number}
+    //                 {...register("phone_number")}
+    //               />
+    //               {errors.phone_number && <p className="text-red-500">{errors.phone_number.message}</p>}
+    //             </div>
+    //             <div className="form-control">
+    //               <label htmlFor="phone_number" className="label">Password</label>
+    //               <input
+    //                 id="phone_number"
+    //                 className="input input-bordered"
+    //                 defaultValue="********"
+    //               />
+    //             </div>
+    //             <div className="form-control">
+    //               <label htmlFor="phone_number" className="label">Confirm Password</label>
+    //               <input
+    //                 id="phone_number"
+    //                 className="input input-bordered"
+    //                 defaultValue="********"
+    //               />
+    //             </div>
+               
+                
+    //           </div>
+
+    //           <div className="form-control mt-4">
+    //             <label htmlFor="image" className="label">Profile Image</label>
+    //             <input
+    //               type="file"
+    //               id="image"
+    //               className="file-input file-input-bordered"
+    //               onChange={handleImageUpload}
+    //             />
+    //           </div>
+
+    //           <div className="flex justify-end mt-4 space-x-4">
+    //             <button type="button" className="btn bg-gray-500 text-white" onClick={() => setIsEditMode(false)}>Cancel</button>
+    //             <button type="submit" className="btn bg-blue-500 text-white">Update Profile
+    //               {isUpdating && <div className="loader loader-dots"></div>}
+    //             </button>
+    //           </div>
+    //         </form>
+    //       </div>
+    //     )}
+    //   </div>
+    // </>
     <>
-    <Toaster />
-      {/* <div className="card  mx-auto p-6 rounded-md bg-gray-800 min-h-fit max-w-4xl"> */}
-      <div className='card  mx-auto p-6'>
+      <Toaster
+        toastOptions={{
+          classNames: {
+            error: 'bg-red-400',
+            success: 'text-green-400',
+            warning: 'text-yellow-400',
+            info: 'bg-blue-400',
+          },
+        }}
+      />
+      <div className="card shadow-xl mx-auto p-6 rounded-md bg-gray-800 min-h-fit max-w-4xl">
         <div className="flex flex-col items-center md:flex-row md:items-start border-b-2 border-slate-600 pb-6">
           <div className="relative mb-6 md:mb-0 md:mr-8 flex justify-center items-center">
             <img
@@ -127,19 +269,22 @@ const Profile = () => {
               <div className="absolute bottom-0 right-0 p-1 bg-green-700 rounded-full border-2 border-white">
                 <MdCheckCircle className="text-white w-6 h-6" title="Verified" />
               </div>
+
             ) : (
-              <div
-                className="absolute bottom-0 right-0 p-1 bg-gray-700 rounded-full border-2 border-white cursor-pointer"
-                title="Not Verified"
-              >
-                <MdHelp className="text-white w-6 h-6" />
-              </div>
+                <div
+                  className="absolute bottom-0 right-0 p-1 bg-gray-700 rounded-full border-2 border-white cursor-pointer"
+                  title="Click for verification instructions"
+                  // onClick={() => setIsVerificationModalOpen(true)}
+                >
+                  <MdHelp className="text-white w-6 h-6" />
+                </div>
+
             )}
           </div>
           <div className="text-center md:text-left">
             <h1 className="text-3xl font-bold mb-2">
-              {userData.first_name} {userData.last_name}
-              <span className="badge badge-accent badge-outline">{role}</span>
+              {userData.first_name} {userData.last_name} 
+              <span className="badge badge-accent badge-outline"> {role}</span>
             </h1>
             <div className="space-y-2">
               <div className="flex items-center">
@@ -152,13 +297,13 @@ const Profile = () => {
                 <p className="text-lg font-semibold">Phone:</p>
                 <p className="text-lg ml-2">{userData.phone_number}</p>
               </div>
-            
             </div>
           </div>
         </div>
 
         <div className="flex justify-center mt-6 space-x-4">
           <button className="btn btn-primary" onClick={() => setIsEditMode(true)}>Edit Profile</button>
+          {/* <button className="btn btn-warning" onClick={() => setIsChangePasswordModalOpen(true)}>Change Password</button> */}
         </div>
 
         {isEditMode && (
@@ -170,59 +315,38 @@ const Profile = () => {
                   <input
                     id="first_name"
                     className="input input-bordered"
-                    defaultValue={userData.first_name}
                     {...register("first_name")}
                   />
-                  {errors.first_name && <p className="text-red-500">{errors.first_name.message}</p>}
+                  <p className="text-red-500">{errors.first_name?.message}</p>
                 </div>
                 <div className="form-control">
                   <label htmlFor="last_name" className="label">Last Name</label>
                   <input
                     id="last_name"
                     className="input input-bordered"
-                    defaultValue={userData.last_name}
                     {...register("last_name")}
                   />
-                  {errors.last_name && <p className="text-red-500">{errors.last_name.message}</p>}
+                  <p className="text-red-500">{errors.last_name?.message}</p>
                 </div>
                 <div className="form-control">
                   <label htmlFor="email" className="label">Email</label>
                   <input
                     id="email"
                     className="input input-bordered"
-                    defaultValue={userData.email}
                     {...register("email")}
                   />
-                   {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                  <p className="text-red-500">{errors.email?.message}</p>
                 </div>
                 <div className="form-control">
                   <label htmlFor="phone_number" className="label">Phone Number</label>
                   <input
                     id="phone_number"
                     className="input input-bordered"
-                    defaultValue={userData.phone_number}
                     {...register("phone_number")}
                   />
-                  {errors.phone_number && <p className="text-red-500">{errors.phone_number.message}</p>}
+                  <p className="text-red-500">{errors.phone_number?.message}</p>
                 </div>
-                <div className="form-control">
-                  <label htmlFor="phone_number" className="label">Password</label>
-                  <input
-                    id="phone_number"
-                    className="input input-bordered"
-                    defaultValue="********"
-                  />
-                </div>
-                <div className="form-control">
-                  <label htmlFor="phone_number" className="label">Confirm Password</label>
-                  <input
-                    id="phone_number"
-                    className="input input-bordered"
-                    defaultValue="********"
-                  />
-                </div>
-               
-                
+              
               </div>
 
               <div className="form-control mt-4">
@@ -235,16 +359,13 @@ const Profile = () => {
                 />
               </div>
 
-              <div className="flex justify-end mt-4 space-x-4">
-                <button type="button" className="btn bg-gray-500 text-white" onClick={() => setIsEditMode(false)}>Cancel</button>
-                <button type="submit" className="btn bg-blue-500 text-white">Update Profile
-                  {isUpdating && <div className="loader loader-dots"></div>}
-                </button>
-              </div>
+              
             </form>
           </div>
         )}
       </div>
+
+    
     </>
   );
 };

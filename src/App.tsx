@@ -56,7 +56,7 @@ function App() {
       errorElement: <Error />,
       children: [
         {
-          path: 'profile',
+          path: 'user_profile',
           element: <Profile />
         },
         {

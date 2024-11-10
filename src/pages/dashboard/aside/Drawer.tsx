@@ -73,8 +73,8 @@ function SideNav() {
 
       {/* Side Navigation */}
       {/* <ul className={`menu bg-base-200 min-h-full text-base-content transition-all duration-300 ${isOpen ? 'w-54' : 'w-0'} overflow-hidden`}> */}
-      <ul className={`fixed left-0 z-4 menu bg-base-200 min-h-full text-base-content p-4 overflow-y-auto transition-transform duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
-          } text-nav bg-drawer rounded w-44 dark:bg-drawer ml-1 mb-4 lg:translate-x-0`}
+      <ul className={`fixed left-0 z-4 menu bg-gray-900 min-h-full text-base-content p-3 overflow-y-auto transition-transform duration-200 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          } text-nav bg-drawer rounded w-44 dark:bg-drawer ml-3 mb-0 lg:translate-x-0`}
         tabIndex={-1}
         aria-labelledby="drawer-body-scrolling-label"
       >
@@ -106,7 +106,7 @@ function SideNav() {
         </li>
 
         {/* Profile (visible to all roles) */}
-        <li><Link to="profile"><SquareUserRound />Profile</Link></li>
+        <li><Link to="user_profile"><SquareUserRound />Profile</Link></li>
         <li><Link to="community"><Users />Community</Link></li>
 
         {/* Members (restricted to admin and super_admin) */}
