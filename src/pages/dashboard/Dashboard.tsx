@@ -67,7 +67,7 @@ function Dashboard() {
         <aside className="lg:flex flex-col flex-shrink-0 w-1 lg:w-44 drawer z-50">
           <Drawer />
         </aside>
-        <div className='flex flex-col min-w-[100%]'>
+        <div className='flex flex-col min-w-[85%]'>
         <Card className='flex-1 overflow-y-auto'>
         <main className="flex-1 overflow-y-auto">
           <Outlet />
