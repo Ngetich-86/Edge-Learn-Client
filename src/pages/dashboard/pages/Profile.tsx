@@ -10,6 +10,7 @@ import * as yup from 'yup';
 import { useForm, SubmitHandler } from 'react-hook-form'
 import axios from 'axios';
 import { Toaster, toast } from 'sonner';
+import {SyncLoader } from "react-spinners";
 
 type UserFormData = {
   first_name: string;
@@ -103,7 +104,9 @@ const Profile = () => {
     return <div>Error loading user data.</div>;
   }
   if (isLoading) {
-    return <div>Loading user data...</div>;
+    return <div>
+      <SyncLoader size={20} aria-colspan={4} color={"#37B7C3"} />
+      Loading user data...</div>;
   }
   
 

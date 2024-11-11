@@ -44,6 +44,7 @@ const Members = () => {
               <th className="px-4 py-2 border-b">Phone Number</th>
               <th className="px-4 py-2 border-b">Id</th>
               <th className="px-4 py-2 border-b">Image</th>
+              {/* <th className="px-4 py-2 border-b">Role</th> */}
               <th>Action</th>
             </tr>
           </thead>
@@ -69,6 +70,7 @@ const Members = () => {
                       <img src={user.image_url }
                       className="rounded-full h-12 w-12 object-cover border-2" alt="pic" />
                       </td>
+                      {/* <td className="px-4 py-2">{user.user_type}</td> */}
                     <td>
     <Link to='profile' className='btn btn-sm btn-primary mx-2'>
         Edit
