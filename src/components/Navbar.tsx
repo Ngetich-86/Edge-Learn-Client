@@ -76,7 +76,7 @@ import { logOut } from "../features/users/userSlice";
 import { useDispatch } from "react-redux";
 
 const Navbar = () => {
-    const navigate = useNavigate(); useNavigate
+    const navigate = useNavigate(); 
     const dispatch = useDispatch();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
