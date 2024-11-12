@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Edge Data Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Vite project template using React and TypeScript.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps to clone the repository and set up the project locally.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **pnpm** package manager
 
-- Configure the top-level `parserOptions` property like this:
+If you haven’t installed pnpm, you can do so by running:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install -g pnpm
+```
+## Installation
+###Clone the repository:
+
+```bash
+git clone <repository_url>
+```
+### Navigate to the project directory:
+
+```bash
+cd edge-data-client
+```
+## Install dependencies:
+```bash
+pnpm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Run the development server:
+```bash
+pnpm run dev
+```
+This will start the Vite development server. You can now view the project at http://localhost:3000 (or the URL provided in the terminal).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Create a Vite project with React and TypeScript from Scratch
+If you want to create this project from scratch, use the following commands:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+pnpm create vite@latest edge-data-client --template react-ts
+cd edge-data-client
+pnpm install
 ```
