@@ -16,10 +16,10 @@ If you haven’t installed pnpm, you can do so by running:
 npm install -g pnpm
 ```
 ## Installation
-###Clone the repository:
+### Clone the repository:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/Ngetich-86/edge-data-client.git
 ```
 ### Navigate to the project directory:
 
