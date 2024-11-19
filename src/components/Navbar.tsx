@@ -74,6 +74,7 @@ import { RootState } from "../app/store";
 import logo from "../assets/images/PrismCloudata-logo.png";
 import { logOut } from "../features/users/userSlice";
 import { useDispatch } from "react-redux";
+import ThemeToggle from "../pages/dashboard/pages/Settings";
 
 const Navbar = () => {
     const navigate = useNavigate(); 
@@ -138,6 +139,7 @@ const Navbar = () => {
                         )}
                     </ul>
                 </div>
+                <ThemeToggle />
 
 
                 <div className="flex lg:hidden">
