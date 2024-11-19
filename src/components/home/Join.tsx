@@ -53,15 +53,15 @@ const Join = () => {
     <section className="min-h-[30vh] h-full w-full flex items-center justify-center  banner-gradient-background max-xl:px-4 py-12">
       <div className="w-full max-w-[1400px] flex items-start justify-between max-lg:flex-col pt-12">
         <div className="flex-1">
-          <div className="capitalize text-white font-medium">
+          <div className="capitalize font-medium">
             <h2 className="text-3xl banner-title">Empowering Innovation with </h2>
             <h2 className="text-4xl banner-title-2">
             Web, Cloud, and Data Solutions
             </h2>
           </div>
-          <div className="py-3 text-lg text-gray-100 animate-banner-description">
+          <div className="py-3 text-lg animate-banner-description">
             <p>
-            Welcome to EdgeData, where we empower you to explore the transformative power of web, cloud, and data solutions. Join us in a collaborative space where you’ll 
+            Welcome to PrismCloudata, where we empower you to explore the transformative power of web, cloud, and data solutions. Join us in a collaborative space where you’ll 
             connect with fellow enthusiasts, tackle exciting challenges, and develop essential skills for today’s digital landscape.
             </p>
             <p className="my-4">

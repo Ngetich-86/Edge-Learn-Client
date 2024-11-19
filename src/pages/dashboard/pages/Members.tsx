@@ -33,7 +33,7 @@ const Members = () => {
   return (
     <div className="container mx-auto p-4">
       <Toaster />
-      <h2 className="text-2xl flex justify-center text-white font-semibold mb-6">Our members</h2>
+      <h2 className="text-2xl flex justify-center font-semibold mb-6">Our members</h2>
       <div className="m-10">
         <table>
           <thead>

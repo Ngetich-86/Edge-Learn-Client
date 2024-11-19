@@ -61,16 +61,16 @@ export const Contact = () => {
       <p className='text-center'>Any Queries, Get In Touch...</p>
       <div className='flex flex-col md:flex-row p-5 justify-center items-center h-fit gap-4 md:gap-8 pb-10 text-text-light'>
         <div className='flex flex-col w-full md:w-[30%] space-y-4'>
-          <div className='bg-gray-800 p-5 rounded-lg text-center flex flex-col items-center'>
+          <div className='bg-base-300 p-5 rounded-lg text-center flex flex-col items-center'>
             <MdLocationOn className='text-[#0098FF] text-2xl mb-2' />
             <h3 className=' text-lg md:text-xl'>Location</h3>
             <p>Nairobi, Kenya</p>
           </div>
-          <div className='bg-gray-800 p-5 rounded-lg text-center flex flex-col items-center'>
+          <div className='bg-base-300 p-5 rounded-lg text-center flex flex-col items-center'>
             <MdEmail className='text-[#0098FF] text-2xl mb-2' />
             <h3 className=' text-lg md:text-xl'>Email</h3>
           </div>
-          <div className='bg-gray-800 p-5 rounded-lg text-center flex flex-col items-center'>
+          <div className='bg-base-300 p-5 rounded-lg text-center flex flex-col items-center'>
             <MdPhone className='text-[#0098FF] text-2xl mb-2' />
             <h3 className=' text-lg md:text-xl'>Phone</h3>
             <p>(+254) 7000000</p>
@@ -78,7 +78,7 @@ export const Contact = () => {
         </div>
 
         {/* Right Side: Contact Form */}
-        <div className='flex flex-col w-full md:w-[50%] bg-gray-800 p-5 rounded-lg justify-center'>
+        <div className='flex flex-col w-full md:w-[50%] bg-base-300 p-5 rounded-lg justify-center'>
           <h2 className='text-xl md:text-2xl font-bold text-center mb-5'>Reach Out!</h2>
           <form className='flex flex-col space-y-4' onSubmit={handleSubmit}>
             <input
@@ -93,12 +93,12 @@ export const Contact = () => {
             />
             <input
               type='text' name='subject' value={formData.subject} onChange={handleChange} placeholder='Subject'
-              className='p-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#00df9a] md:w-[90%]'
+              className='p-2 rounded-lg  text-white focus:outline-none focus:ring-2 focus:ring-[#00df9a] md:w-[90%]'
               required
             />
             <textarea name='message' value={formData.message} onChange={handleChange} placeholder='Message'
               rows={4}
-              className='p-2 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#00df9a] resize-none md:w-[90%]'
+              className='p-2 rounded-lg  text-white focus:outline-none focus:ring-2 focus:ring-[#00df9a] resize-none md:w-[90%]'
               required
             ></textarea>
             <button

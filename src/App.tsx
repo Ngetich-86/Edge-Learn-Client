@@ -17,6 +17,7 @@ import Analytics from './pages/dashboard/pages/Analytics';
 import Settings from './pages/dashboard/pages/Settings';
 import DashboardPage from './pages/DashboardPage';
 import Services from './components/Services';
+import EmailSender from './pages/dashboard/pages/EmailSender';
 
 function App() {
   const router = createBrowserRouter([
@@ -90,6 +91,10 @@ function App() {
         {
           path: 'services',
           element: <Services />
+        },
+        {
+          path: 'mail',
+          element: <EmailSender />
         }
       ]
       }

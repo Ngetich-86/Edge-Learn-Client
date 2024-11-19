@@ -38,12 +38,12 @@ const Services: React.FC = () => {
       {ourservices.map((event, index) => (
         <div
           key={index}
-          className="bg-gray-900 text-black shadow-md rounded-lg overflow-hidden"
+          className="bg-base-900 text-black shadow-md rounded-lg overflow-hidden"
         >
           <div className="p-4">
             <h2 className="text-xl font-bold text-white">{event.title}</h2>
             <img src={event.image} alt={event.title} className="w-full h-44 object-cover mt-4" />
-            <p className="text-white mt-2">{event.description}</p>
+            <p className=" mt-2">{event.description}</p>
             <div className="flex justify-center items-center">
   <button className="btn btn-primary bg-[#0003FF]">
   <NavLink to="/contact-us">Book Now!</NavLink>

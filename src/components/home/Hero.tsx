@@ -71,8 +71,8 @@ const Hero = () => {
           <div className="font-medium text-lg xs:text-3xl lg:text-3xl xl:text-3xl text-blue-500 typing-effect">
             <TypingEffect words={[`Hello👋Welcome to PrismCloudata, the Future of Innovation!`]} />
           </div>
-          <h5 className="text-xl xs:text-2xl lg:text-3xl xl:text-3xl py-4 text-white hero-title">{` web + cloud + data`}</h5>
-          <p className="font-light text-sm xl:text-lg text-gray-100 description">
+          <h5 className="text-xl xs:text-2xl lg:text-3xl xl:text-3xl py-4  hero-title">{` web + cloud + data`}</h5>
+          <p className="font-light text-sm xl:text-lg description">
           Unlock the power of the cloud, sharpen your skills with our top-tier data analytics services, 
         and explore insightful blogs that keep you updated on the latest trends in the industry. 
         PrismCloudata is your go-to platform for learning, collaborating, and growing. Whether you’re a 

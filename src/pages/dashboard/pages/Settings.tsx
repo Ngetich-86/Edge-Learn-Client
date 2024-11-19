@@ -20,15 +20,15 @@ const ThemeToggle = () => {
 
   // Icon based on the theme
   const getIcon = () => {
-    if (theme === "light") return <MdLightMode size={24} />;
-    if (theme === "dark") return <MdDarkMode size={24} />;
-    if (theme === "cupcake") return <FaBirthdayCake size={24} />;
+    if (theme === "light") return <MdLightMode size={14} />;
+    if (theme === "dark") return <MdDarkMode size={14} />;
+    if (theme === "cupcake") return <FaBirthdayCake size={14} />;
   };
 
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center text-green "
+      className="flex items-center text-success bg-gray-900 btn btn-secondary"
     >
       {getIcon()}
       {/* <span className="capitalize">{theme} Mode</span> */}

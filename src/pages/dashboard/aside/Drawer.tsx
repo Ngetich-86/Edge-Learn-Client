@@ -2,7 +2,7 @@
 
 
 //================================================test code=========================
-import { Users, SquareUserRound, Menu, LogOut, Settings, Book } from "lucide-react";
+import { Users, SquareUserRound, Menu, LogOut, Settings, Book, Mail } from "lucide-react";
 import { ChevronsRight, ChevronsLeft } from 'lucide-react';
 import { Link, useNavigate } from "react-router-dom";
 import { store } from "../../../app/store";
@@ -112,6 +112,10 @@ function SideNav() {
         {/* Members (restricted to admin and super_admin) */}
         {canViewItem(true) && (
           <li><Link to="members"><Users />Members</Link></li>
+        )}
+        {/* send mail */}
+        {canViewItem(true) && (
+          <li><Link to="mail"><Mail />Newsletter</Link></li>
         )}
 
         {/* Home */}
