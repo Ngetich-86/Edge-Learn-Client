@@ -4,7 +4,8 @@ import { FaBirthdayCake } from "react-icons/fa"; // Icon for the "cupcake" theme
 
 const ThemeToggle = () => {
   const themes = ["light", "dark", "cupcake"];
-  const [theme, setTheme] = useState(themes[0]);
+  // const [theme, setTheme] = useState(themes[0]);
+  const [theme, setTheme] = useState("dark");// by default dark mode
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
